@@ -20,7 +20,7 @@ const showProducts = (products) => {
             <img class="product-image" src=${image}></img>
           </div>
             <div class="card-body">
-                <h4>${product.title.slice(0, 40)}</h4>
+                <h4>${product.title.slice(0, 35)}</h4>
                 <p>Category: ${product.category}</p>
                 <div class="d-flex justify-content-between w-75">
                     <h6>Rating: ${count}</h6>
@@ -28,7 +28,7 @@ const showProducts = (products) => {
                 </div>
                 <h4>Price: <span class="price">$ ${product.price} </span></h4>
             </div>
-            <div class="text-center">
+            <div class="cart-footer">
                 <button onclick="addToCart(${product.id},${product.price})"
                 id="addToCart-btn" class="buy-now cart-btn text-white">Add to Cart</button>
                 <button id="details-btn" class="details-btn">Details</button>
